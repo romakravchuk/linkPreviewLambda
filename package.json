@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "sls_invoke_localy": "serverless invoke local --function linkPreview -p ./event.json",
+    "sls_deploy": "serverless deploy --aws-profile roman4ik",
+    "sls_deploy_func": "serverless deploy function --function linkPreview --aws-profile roman4ik"
+  },
+  "dependencies": {
+    "dom-parser": "^0.1.6",
+    "node-fetch": "^2.6.1",
+    "serverless-finch": "^2.6.0"
+  }
+}
